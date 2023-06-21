@@ -1,0 +1,11 @@
+INDEX VERSION 1.132
+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1004982254.index
+\04_SpringBootProject\src\main\java
+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\286125626.index
+\03_SpringMVCBoot\src\main\java
+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2577593205.index
+\04_SpringBootProject\src\main\java
+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3218593311.index
+\05_SpringBootProject\src\main\java
+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1825039706.index
+\04_SpringBootProject\src\main\java

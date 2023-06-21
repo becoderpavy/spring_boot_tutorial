@@ -1,0 +1,17 @@
+package com.becoder.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+
+import com.becoder.entites.Student;
+
+//public interface StudentRepo extends CrudRepository<Student, Integer> {
+public interface StudentRepo extends JpaRepository<Student, Integer> {
+
+	List<Student> findByNameNotLike(String ch);
+	List<Student> findByNameStartingWith(String ch);
+	
+	
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="de.jcup.yamleditor:1.9.0"/>
+		<item value="org.eclipse.buildship:3.1.6.v20220511-1359"/>
+		<item value="org.eclipse.egit.gitflow.feature:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.egit:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.emf.common:2.29.0.v20230223-0922"/>
+		<item value="org.eclipse.emf.ecore:2.31.0.v20230226-0921"/>
+		<item value="org.eclipse.epp.mpc:1.10.1.v20221110-1841"/>
+		<item value="org.eclipse.help:2.3.1300.v20230302-0300"/>
+		<item value="org.eclipse.jdt:3.19.0.v20230302-0300"/>
+		<item value="org.eclipse.jgit.gpg.bc:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.jgit.http.apache:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.jgit.lfs:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.jgit:6.5.0.202303070854-r"/>
+		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.29.0.v202301170743"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.7.v20230425-1502"/>
+		<item value="org.eclipse.m2e.feature:2.2.1.20230307-1553"/>
+		<item value="org.eclipse.m2e.logback.feature:2.1.1.20230106-1511"/>
+		<item value="org.eclipse.m2e.wtp.feature:1.6.0.20230118-0812"/>
+		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.46.202301111837"/>
+		<item value="org.eclipse.pde:3.14.1500.v20230302-0300"/>
+		<item value="org.eclipse.platform:4.27.0.v20230302-0300"/>
+		<item value="org.eclipse.rcp:4.27.0.v20230302-0300"/>
+		<item value="org.eclipse.tm.terminal.connector.ssh.feature:11.1.0.202212091724"/>
+		<item value="org.eclipse.tm.terminal.control.feature:11.1.0.202212091724"/>
+		<item value="org.eclipse.tm.terminal.feature:11.1.0.202212091724"/>
+		<item value="org.eclipse.tm.terminal.view.feature:11.1.0.202212091724"/>
+		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+		<item value="org.eclipse.wst.common.fproj:3.7.4.v202303031844"/>
+		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
+		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
+	</list>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Pabitra\Downloads\01_SBT_APP"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="518"/>
+		<item key="DIALOG_Y_ORIGIN" value="209"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>
