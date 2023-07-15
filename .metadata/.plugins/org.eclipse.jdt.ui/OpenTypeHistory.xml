@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=07-Spring-Security-Internal/C:\/Users\/Pabitra\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/6.1.1\/spring-security-web-6.1.1.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-web=/=/maven.version=/6.1.1=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.security.web.authentication.www(BasicAuthenticationFilter.class[BasicAuthenticationFilter" modifiers="33" timestamp="1688301402023"/>
+</typeInfoHistroy>

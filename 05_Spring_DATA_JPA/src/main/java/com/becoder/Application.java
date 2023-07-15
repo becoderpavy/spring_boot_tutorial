@@ -5,6 +5,10 @@ import java.util.List;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import com.becoder.entites.Student;
 import com.becoder.repository.StudentRepo;
@@ -93,8 +97,29 @@ public class Application {
 		 * System.out.println(st);
 		 */
 
-		List<Student> st = stRepo.searchname("UK");
-		st.forEach(e -> System.out.println(e));
+		/*
+		 * List<Student> st = stRepo.searchname("UK"); st.forEach(e ->
+		 * System.out.println(e));
+		 */
+
+		// pagination
+		Sort sort = Sort.by("id").descending();
+
+		List<Student> listSortStudent = stRepo.findAll(sort);
+
+		System.out.println("-----------sorting student details--------");
+		listSortStudent.forEach(e->System.out.println(e));
+		System.out.println("------------------------");
+		
+		Pageable pageable = PageRequest.of(1, 3, sort);
+
+		Page<Student> page = stRepo.findAll(pageable);
+
+		page.get().forEach(e -> System.out.println(e));
+		System.out.println("Size=" + page.getSize());
+		System.out.println("Elements=" + page.getTotalElements());
+		System.out.println("Pages=" + page.getTotalPages());
+
 	}
 
 }
