@@ -191,7 +191,6 @@ INDEX VERSION 1.132+D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metad
 833088565.index
 117509417.index
 2314087494.index
-3624233006.index
 32697164.index
 1394027683.index
 3571347358.index
