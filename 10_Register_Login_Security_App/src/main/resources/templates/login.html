@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<section>
+		<div class="container p-3">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card">
+						<div class="card-header text-center fs-4">Login Page</div>
+						<th:block th:if="${param.error}">
+							<p class="text-center text-danger fs-5">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
+						</th:block>
+						<th:block th:if="${param.logout}">
+							<p class="text-center text-success fs-5">Logout Sucessfully</p>
+						</th:block>
+						<div class="card-body">
+							<form action="userLogin" method="post">
+
+								<div class="mb-3">
+									<label>Enter Email</label> <input type="text" name="username"
+										class="form-control">
+								</div>
+								<div class="mb-3">
+									<label>Enter Password</label> <input type="text"
+										name="password" class="form-control">
+								</div>
+								<button class="btn btn-primary col-md-12">Login</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+</body>
+</html>

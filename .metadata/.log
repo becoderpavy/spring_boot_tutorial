@@ -8002,3 +8002,244 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:34:36.774
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:34:36.783
+!MESSAGE Boot project ADDED: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:34:39.000
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.eclipse.jface 2 0 2023-07-15 18:40:20.250
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-15 18:40:20.250
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.141
+!MESSAGE Classpath changed for project: 08_Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.152
+!MESSAGE Classpath changed for project: 09_Spring_Security_DB_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.155
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.158
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.453
+!MESSAGE Classpath changed for project: 08_Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.453
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.454
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:41:44.455
+!MESSAGE Classpath changed for project: 09_Spring_Security_DB_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:42:00.426
+!MESSAGE Classpath changed for project: 08_Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:42:00.437
+!MESSAGE Classpath changed for project: 09_Spring_Security_DB_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:42:00.444
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:42:00.445
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-15 18:43:43.410
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:43:46.674
+!MESSAGE Classpath changed for project: 08_Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:43:46.675
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:43:47.324
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 18:43:48.113
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-15 18:44:10.920
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-15 19:15:26.023
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 19:56:01.992
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-15 19:56:46.944
+!MESSAGE Classpath changed for project: 10_Register_Login_Security_App
+
+!ENTRY org.eclipse.jdt.ui 2 0 2023-07-15 20:01:45.385
+!MESSAGE The 'org.eclipse.jdt.ui.JavaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.jdt.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-15 20:13:00.896
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2023-07-17 18:10:26.391 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-17 18:10:30.538
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-17 18:10:43.670
+!MESSAGE Logback config file: D:\Youtube\Tutorial\spring_boot\spring_boot_tutorials\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-17 18:11:04.521
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-17 18:11:04.521
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-17 18:11:10.239
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pabitra'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.310
+!MESSAGE Boot project ADDED: 01_SBT_APP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.312
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.377
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.378
+!MESSAGE Boot project ADDED: 02_SBT_APP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.379
+!MESSAGE Boot project ADDED: 03_SpringMVCBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.380
+!MESSAGE Boot project ADDED: 04_SpringBootProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.381
+!MESSAGE Boot project ADDED: 05_Spring_DATA_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.381
+!MESSAGE Boot project ADDED: 06-Sping_JPA_Mapping
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.402
+!MESSAGE Boot project ADDED: 07-Spring-Security-Internal
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.421
+!MESSAGE Boot project ADDED: 08_Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.446
+!MESSAGE Boot project ADDED: 09_Spring_Security_DB_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.454
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-17 18:11:11.474
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 16340
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.485
+!MESSAGE Boot project ADDED: 10_Register_Login_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.508
+!MESSAGE Boot project ADDED: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.529
+!MESSAGE Boot project ADDED: First_Spring_Boot_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-17 18:11:11.550
+!MESSAGE Boot project ADDED: Todo_Apps
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-17 18:11:31.623
+!MESSAGE executing callback sts4.classpath.LYxEiJLp FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-07-17 18:11:31.624
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
