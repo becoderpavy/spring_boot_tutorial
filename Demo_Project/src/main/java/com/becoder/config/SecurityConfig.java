@@ -10,13 +10,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
-	@Autowired
-	public CustomAuthSucessHandler sucessHandler;
+	
 	
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder() {
@@ -52,11 +52,16 @@ public class SecurityConfig {
 		.requestMatchers("/admin/**").hasRole("ADMIN")
 		.requestMatchers("/**").permitAll().and()
 		.formLogin().loginPage("/signin").loginProcessingUrl("/userLogin")
+		.failureHandler(failureHandler)
 		.successHandler(sucessHandler)
 		.permitAll();
 		
 		
 		return http.build();
 	}
-
+	@Autowired
+	public CustomAuthSucessHandler sucessHandler;
+	
+	@Autowired
+	private CustomFailureHandler failureHandler;
 }

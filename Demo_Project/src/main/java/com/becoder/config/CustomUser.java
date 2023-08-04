@@ -26,6 +26,14 @@ public class CustomUser implements UserDetails {
 		return Arrays.asList(authority);
 	}
 
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	@Override
 	public String getPassword() {
 		return user.getPassword();

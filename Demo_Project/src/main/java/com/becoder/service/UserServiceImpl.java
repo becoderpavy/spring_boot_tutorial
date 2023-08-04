@@ -1,6 +1,6 @@
 package com.becoder.service;
 
-import java.util.Random;
+import java.util.Date;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +16,10 @@ import com.becoder.repository.UserRepo;
 
 import jakarta.mail.internet.MimeMessage;
 import jakarta.servlet.http.HttpSession;
+import jakarta.transaction.Transactional;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
 	@Autowired
@@ -36,14 +38,17 @@ public class UserServiceImpl implements UserService {
 		user.setPassword(password);
 		user.setRole("ROLE_USER");
 
-		user.setEnable(false);
+		user.setEnable(true);
 		user.setVerificationCode(UUID.randomUUID().toString());
-
+		user.setAccountNonLocked(true);
+		user.setFailedAttempt(0);
+		user.setLockTime(null);
+		
 		User newuser = userRepo.save(user);
 
-		if (newuser != null) {
-			sendEmail(newuser, url);
-		}
+//		if (newuser != null) {
+//			sendEmail(newuser, url);
+//		}
 
 		return newuser;
 	}
@@ -109,6 +114,44 @@ public class UserServiceImpl implements UserService {
 				.getSession();
 
 		session.removeAttribute("msg");
+	}
+
+	public static final int MAX_FAILED_ATTEMPTS = 3;
+
+	private static final long LOCK_TIME_DURATION = 30000; // 24 hours
+
+	@Override
+	public void increaseFailedAttempt(User user) {
+		int newFailedAttempt = user.getFailedAttempt() + 1;
+		userRepo.updateFailedAttempt(newFailedAttempt, user.getEmail());
+	}
+
+	@Override
+	public void resetFailedAttempt(String email) {
+		userRepo.updateFailedAttempt(0, email);
+	}
+
+	@Override
+	public void lock(User user) {
+		user.setAccountNonLocked(false);
+		user.setLockTime(new Date());
+		userRepo.save(user);
+	}
+
+	@Override
+	public boolean unlockWhenTimeExpired(User user) {
+		long lockTimeInMills = user.getLockTime().getTime();
+		long currentTimeMillis = System.currentTimeMillis();
+
+		if (lockTimeInMills + LOCK_TIME_DURATION < currentTimeMillis) {
+			user.setAccountNonLocked(true);
+			user.setFailedAttempt(0);
+			user.setLockTime(null);
+			userRepo.save(user);
+			return true;
+		}
+		return false;
+
 	}
 
 }
