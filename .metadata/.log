@@ -10501,3 +10501,36 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.to
 	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:243)
 	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:228)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 20:13:30.857
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 20:13:30.991
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 20:13:35.341
+!MESSAGE Classpath changed for project: Demo_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-04 20:13:35.341
+!MESSAGE Boot project ADDED: Demo_Project
+
+!ENTRY org.eclipse.jface 2 0 2023-08-04 20:19:04.895
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-04 20:19:04.895
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
